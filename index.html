@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DB-Assets Payhip Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            background-color: #007bff; /* Change the color as needed */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            text-align: center;
+            margin-top: 0.3in; /* 1/8 inch + 1 inch in inches (1 inch = 96 pixels) */
+            max-width: 42%; /* Adjust the width as needed */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .payhip-embed {
+            max-width: 100%; /* Adjust the width as needed */
+            margin-top: 12px; /* Adjust the margin from the banner as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>DB-Assets</h1>
+    </div>
+    <div class="container">
+        <!-- Replace the "data-key" value with your actual Payhip product key -->
+        <div class="payhip-embed-page" data-key="dD1ui">...</div>
+        <script type="text/javascript" src="https://payhip.com/embed-page.js?v=24u68984"></script>
+    </div>
+</body>
+</html>
