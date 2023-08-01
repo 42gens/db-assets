@@ -15,17 +15,6 @@
             text-align: center;
             padding: 10px;
         }
-        .container {
-            text-align: center;
-            margin-top: 0.3in; /* 1/8 inch + 1 inch in inches (1 inch = 96 pixels) */
-            max-width: 42%; /* Adjust the width as needed */
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .payhip-embed {
-            max-width: 100%; /* Adjust the width as needed */
-            margin-top: 12px; /* Adjust the margin from the banner as needed */
-        }
         .banner-links {
             margin-top: 10px;
         }
@@ -34,21 +23,25 @@
             margin: 0 10px;
             text-decoration: none;
         }
+        .iframe-container {
+            margin-top: 0.3in; /* 1/8 inch + 1 inch in inches (1 inch = 96 pixels) */
+            max-width: 100%; /* Adjust the width as needed */
+            margin-left: auto;
+            margin-right: auto;
+            height: 600px; /* Adjust the height as needed */
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <h1>DB-Assets</h1>
-        <div class="banner-links">
-            <a href="https://payhip.com/DBAssets">Shop</a>
-            <a href="https://payhip.com/DBAssets/blog/news">Blog</a>
-            <a href="https://payhip.com/DBAssets/contact">Support</a>
-        </div>
-    </div>
-    <div class="container">
-        <!-- Replace the "data-key" value with your actual Payhip product key -->
-        <div class="payhip-embed-page" data-key="dD1ui">...</div>
-        <script type="text/javascript" src="https://payhip.com/embed-page.js?v=24u68984"></script>
+    <div class="iframe-container">
+        <!-- Replace the "https://example.com" with the URL of the desired website -->
+        <iframe src="https://payhip.com/b/dD1ui"></iframe>
     </div>
 </body>
 </html>
